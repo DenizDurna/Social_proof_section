@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;500;700&display=swap');
+
+* {
+    border: 0;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 17px;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    background-image: url("./images/bg-pattern-top-mobile.svg"), url("./images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+    padding-bottom: 40px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+.topsection {
+    color: rgb(81, 31, 80);
+    margin: 100px 30px 0px 30px;
+    justify-content: center;
+}
+
+.pageComment>h1 {
+    max-width: 380px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.pageComment>p {
+    max-width: 430px;
+    opacity: 0.8;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 25px 0;
+}
+
+.points {
+    background-color: hsl(290, 30%, 96%);
+    padding-left: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    height: 50px;
+}
+
+.customerComments {
+    display: flex;
+    color: white;
+}
+
+.box {
+    background-color: rgb(81, 31, 80);
+    margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.box span,
+.box>p {
+    line-height: 1.5;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+
+.user img {
+    height: 100%;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.userinfo {
+    margin-left: 15px;
+}
+
+.customerComments span {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.userinfo p {
+    color: rgb(210, 86, 197)
+}
+
+@media (min-width:911Px) {
+    :root {
+        background-image: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-desktop.svg");
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 15px;
+    }
+
+    .topsection {
+        justify-content: space-around;
+    }
+
+    .points {
+        width: 420px;
+    }
+
+    .points>div {
+        width: 140px;
+    }
+
+    .Rateds article:nth-child(2) {
+        margin-left: 30px;
+    }
+
+    .Rateds article:nth-child(3) {
+        margin-left: 60px;
+    }
+
+    .customerComments>article:nth-child(2) {
+        margin-top: 60px;
+    }
+
+    .customerComments>article:nth-child(3) {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width:910px) {
+    .topsection {
+        flex-direction: column;
+    }
+
+    .pageComment {
+        text-align: center;
+    }
+
+    .Rateds {
+        width: 90vw;
+    }
+
+    .points {
+        justify-content: center;
+    }
+
+    .points p {
+        width: 240px;
+    }
+
+    .points>div {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width:800px) {
+    .customerComments {
+        flex-direction: column;
+        width: 90vw;
+        margin: auto;
+    }
+}
